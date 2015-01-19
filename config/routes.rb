@@ -3,8 +3,8 @@ Rails.application.routes.draw do
 
   get 'welcome/about'
   get 'welcome/sink'
-
-  index 'welcome#index'
+  get 'index' => 'welcome#index'
+  get 'about' => 'welcome#about'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
