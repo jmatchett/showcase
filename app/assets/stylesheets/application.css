@@ -15,3 +15,12 @@
  *= require foundation_and_overrides
 
  */
+ $ninjaauthor: image-url('profile-ninja.jpg');
+ $ninjabio: image-url('profile-ninja-long.jpg');
+
+ .author:hover {
+  content:url($ninjaauthor);
+}
+.bio:hover {
+  content:url($ninjabio);
+}
