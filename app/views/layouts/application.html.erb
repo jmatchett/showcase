@@ -19,6 +19,28 @@
       .bio:hover {
         content:url('../assets/profile-ninja-long.jpg');
       }
+      footer {
+        margin-top: 60px;
+        box-shadow:0 -60px 0 #797979 inset;
+      }
+      @media screen and (min-width: 400px) {
+        footer {
+          box-shadow:0 -90px 0 #797979 inset;
+          margin-top: 80px;
+        }
+      }
+      @media screen and (min-width: 768px) {
+        footer {
+          box-shadow:0 -100px 0 #797979 inset;
+          margin-top: 80px;
+        }
+      }
+      @media screen and (min-width: 1000px) {
+        footer {
+          box-shadow:0 -150px 0 #797979 inset;
+          margin-top: 100px;
+        }
+      }
     </style>
     <nav class="top-bar" data-topbar="">
       <ul class="title-area">
@@ -53,5 +75,12 @@
 
     <%= yield %>
     <%= javascript_include_tag "application" %>
+    <footer>
+      <div class="row">
+        <div class="column small-6 small-push-3 medium-4 medium-push-4">
+          <%= image_tag "ninjas.png" %>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
