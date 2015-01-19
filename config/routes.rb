@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   get 'welcome/sink'
   get 'index' => 'welcome#index'
   get 'about' => 'welcome#about'
+  root 'welcome#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
