@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title><%= content_for?(:title) ? yield(:title) : "foundation-rails" %></title>
+    <title><%= content_for?(:title) ? yield(:title) : "Your UX Design Ninja" %></title>
 
     <%= stylesheet_link_tag    "application" %>
     <%= javascript_include_tag "vendor/modernizr" %>
@@ -12,13 +12,21 @@
   </head>
 
   <body>
+    <style>
+      .author:hover {
+        content:url('../assets/profile-ninja.jpg');
+      }
+      .bio:hover {
+        content:url('../assets/profile-ninja-long.jpg');
+      }
+    </style>
     <nav class="top-bar" data-topbar="">
       <ul class="title-area">
         <!-- Title Area -->
         <li class="name">
           <h1>
             <a href="#">
-              James Matchett
+              Your UX Design Ninja
             </a>
           </h1>
         </li>
