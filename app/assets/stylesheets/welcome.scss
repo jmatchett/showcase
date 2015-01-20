@@ -6,8 +6,8 @@ $ninjaauthor: image-url('profile-ninja.jpg');
 $ninjabio: image-url('profile-ninja-long.jpg');
 
 .author:hover {
-  content:url($ninjaauthor)
+  content:$ninjaauthor;
 }
 .bio:hover {
-  content:url($ninjabio)
+  content: $ninjabio;
 }
