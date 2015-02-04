@@ -1,0 +1,27 @@
+<div class="row">
+	<div class="column small-12">
+		<h1>Contact Me</h1>
+	</div>
+	<div class="column small-12 medium-8">
+		<p>Drop a line, maybe we can work together someday. I'm available for...</p>
+		<ul>
+			<li>UX Design Consultations</li>
+			<li>Storymapping</li>
+			<li>Prototyping</li>
+			<li>Light Front End Development</li>
+			<li>Miscellaneous Ninja Missions</li>
+	</div>
+	<div class="column small-12 medium-4">
+		<p>Let's get to know each other better,
+			<br>
+			so tell me what's your...
+		</p>
+		<%= form_tag('/contact', method: "get") do %>
+			<%= label_tag(:name, "Name?") %>
+  			<%= text_field_tag(:name) %>
+			<%= label_tag(:email, "Email?") %>
+  			<%= text_field_tag(:email) %>
+  		<%= submit_tag "Submit", class: "button expand" %>
+    <% end %>
+  </div>
+</div>
