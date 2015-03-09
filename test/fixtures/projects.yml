@@ -2,8 +2,10 @@
 
 one:
   title: MyString
+  brief: MyText
   description: MyText
 
 two:
   title: MyString
+  brief: MyText
   description: MyText

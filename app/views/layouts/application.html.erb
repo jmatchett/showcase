@@ -64,6 +64,10 @@
           </li>
           <li class="divider"></li>
           <li class="not-click">
+            <%= link_to "Projects", projects_path %>
+          </li>
+          <li class="divider"></li>
+          <li class="not-click">
             <%= link_to "About Me", about_path %>
           </li>
           <li class="divider"></li>
@@ -85,7 +89,7 @@
     <footer>
       <div class="row">
         <div class="column small-6 small-push-3 medium-4 medium-push-4">
-          <%= image_tag "ninjas.png" %>
+          <a href="<%= new_user_session_path %>"><%= image_tag "ninjas.png" %></a>
         </div>
       </div>
     </footer>

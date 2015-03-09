@@ -6,9 +6,15 @@
 </p>
 
 <p>
+  <strong>Brief:</strong>
+  <%= @project.brief %>
+</p>
+
+<p>
   <strong>Description:</strong>
   <%= @project.description %>
 </p>
-
+<%= image_tag @project.preview.url %>
+<%= image_tag @project.image.url %>
 <%= link_to 'Edit', edit_project_path(@project) %> |
 <%= link_to 'Back', projects_path %>
