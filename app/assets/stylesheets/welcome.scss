@@ -11,3 +11,7 @@ $ninjabio: image-url('profile-ninja-long.jpg');
 .bio:hover {
   content: $ninjabio;
 }
+
+body {
+	background-image: linear-gradient(rgba(255,255,255,0.60),rgba(255,255,255,0.60)), url(http://subtlepatterns.com/patterns/swirl_pattern.png)!important;
+}
