@@ -5,8 +5,8 @@
 	</div>
 	<div class="column small-12 medium-3">
 		<p><%= @project.brief %></p>
-		<p><%= link_to "Live Site", @project.link %></p>
-		<p><%= link_to "Github Repo", @project.github %></p>
+		<p><%= link_to "Live Site", @project.link, target: "_blank" %></p>
+		<p><%= link_to "Github Repo", @project.github, target: "_blank" %></p>
 	</div>
 	<div class="column small-12 medium-9">
 		<p><%= image_tag @project.image.url %></p>
