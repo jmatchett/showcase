@@ -4,6 +4,8 @@ class CreateProjects < ActiveRecord::Migration
       t.string :title
       t.text :brief
       t.text :description
+      t.string :github
+      t.string :link
 
       t.timestamps null: false
     end
